@@ -10,8 +10,9 @@ public class Mammal {
 	
 	public void changeEnergy(int energy) {
 		this.energyLevel += energy;
-		if (this.energyLevel > 100) {
-			this.energyLevel = 100;
-		}
+	}
+	
+	public void setEnergy(int energy) {
+		this.energyLevel = energy;
 	}
 }
