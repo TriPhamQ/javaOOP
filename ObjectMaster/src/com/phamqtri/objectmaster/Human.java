@@ -26,8 +26,29 @@ public class Human {
 		return this.stealth;
 	}
 	
+	public void setHealth(int health) {
+		this.health = health;
+	}
+	
+	public void setStrength(int strength) {
+		this.strength = strength;
+	}
+	
+	public void setIntelligence(int intelligence) {
+		this.intelligence = intelligence;
+	}
+	
+	public void setStealth(int stealth) {
+		this.stealth = stealth;
+	}
+	
 	public int damaged(int damage) {
 		this.health -= damage;
 		return damage;
+	}
+	
+	public int healed(int heal) {
+		this.health += heal;
+		return heal;
 	}
 }
