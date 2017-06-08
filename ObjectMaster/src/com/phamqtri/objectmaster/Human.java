@@ -10,12 +10,24 @@ public class Human {
 		
 	}
 	
-	public int attack(Human enemy) {
-		enemy.health -= this.strength;
-		return enemy.health;
-	}
-	
 	public int getHealth() {
 		return this.health;
+	}
+	
+	public int getStrength() {
+		return this.strength;
+	}
+	
+	public int getIntelligence() {
+		return this.intelligence;
+	}
+	
+	public int getStealth() {
+		return this.stealth;
+	}
+	
+	public int damaged(int damage) {
+		this.health -= damage;
+		return damage;
 	}
 }
